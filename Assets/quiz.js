@@ -8,7 +8,7 @@ const answerBtnEl = document.getElementById("answer-btns");
 
 // variables for shuffling questions
 let shuffledQuestions, currentQuestionIndex;
-let lastQuestionIndex = questions.length -1;
+// let lastQuestionIndex = questions.length -1;
 
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
