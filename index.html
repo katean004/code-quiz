@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="Assets/style.css">
+    <script defer src="Assets/quiz.js"></script>
+    <script defer src="Assets/questions.js"></script>
 </head>
 <body>
+
+<div class="container">
+    <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-btns" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+    </div>
+</div>
+
+<div class="controls">
+    <button id="start-btn" class="start-btn btn" onclick="startTimer()">Start</button>
+    <button id="next-btn" class="next-btn btn hide">Next</button>
+</div>
+
+<!-- score -->
+<div id="score-container"></div>
+
+<!-- timer -->
+<div id="timerr">Timer: <span id="time">05:00</span></div>
+
+<!-- progress -->
+<div id="progress" class="prog"></div>
+
+
+
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="Assets/quiz.js"></script>
 </body>
 </html>
