@@ -3,41 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
-    <link rel="stylesheet" href="Assets/style.css">
-    <script defer src="Assets/quiz.js"></script>
-    <script defer src="Assets/questions.js"></script>
+    <title>Javascript Code Quiz</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="quiz.js"></script>
+    <script defer src="questions.js"></script>
 </head>
 <body>
-
-<div class="container">
-    <div id="question-container" class="hide">
-        <div id="question">Question</div>
-        <div id="answer-btns" class="btn-grid">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
-        </div>
-    </div>
-</div>
-
-<div class="controls">
-    <button id="start-btn" class="start-btn btn" onclick="startTimer()">Start</button>
-    <button id="next-btn" class="next-btn btn hide">Next</button>
-</div>
-
-<!-- score -->
-<div id="score-container"></div>
-
-<!-- timer -->
-<div id="timerr">Timer: <span id="time">05:00</span></div>
-
-<!-- progress -->
-<div id="progress" class="prog"></div>
-
-
-
     
+    <!-- nav bar for highscore and quiz -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Quiz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="highscores.html">High Scores</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
 </body>
 </html>
