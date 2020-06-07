@@ -11,7 +11,7 @@
     <script defer src="questions.js"></script>
 </head>
 <body>
-    
+
     <!-- nav bar for highscore and quiz -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Quiz</a>
@@ -27,6 +27,31 @@
         </div>
     </nav>
 
+    <!-- quiz container -->
+    <div class="card text-center quiz-container">
+        <div class="card-header">
+          Javascript Quiz
+        </div>
+        <!-- Timer -->
+        <div class="card-header" id="time-tracker"></div>
+
+        <div class="card-body question-container">
+          <h5 class="card-title"><div class="question">Question</div></h5>
+          <div id="answer-btns" class="btn-grid">
+            <button class="btn ans1">Answer 1</button>
+            <button class="btn ans2">Answer 2</button>
+            <button class="btn ans3">Answer 3</button>
+            <button class="btn ans4">Answer 4</button>
+        </div>
+        </div>
+        <div class="card-footer text-muted">
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn" >Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+                <a href="highscores.html" class="highscore-btn btn">Input Highscore!</a>
+            </div>
+        </div>
+      </div>
 
 </body>
 </html>
