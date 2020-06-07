@@ -26,7 +26,7 @@ $(document).ready(function(){
     showQuestions(); // show questions function
     });
 
-    // Timer function (done)
+    // Timer function
     function startTimer(){
 
         timeInterval = setInterval(function(){
@@ -42,5 +42,23 @@ $(document).ready(function(){
         }, 1000);
     }
 
+    //Show questions function
+    function showQuestions(){
+        if(index > questions.length-1){
+            console.log("Quiz Over");
+            clearInterval(timeInterval);
+            lastScore();
+            $(".highscore-btn").show(); // show highscore button
+        }
+        else{
+            $(".question").text(questions[index].question);
+            $(".ans1").text(questions[index].answers[0].text);
+            $(".ans2").text(questions[index].answers[1].text);
+            $(".ans3").text(questions[index].answers[2].text);
+            $(".ans4").text(questions[index].answers[3].text);
+        }
+    }
+
+    
 
 })
