@@ -24,10 +24,23 @@ $(document).ready(function(){
         
     startTimer();
     showQuestions(); // show questions function
-        
     });
 
+    // Timer function (done)
+    function startTimer(){
 
+        timeInterval = setInterval(function(){
+        
+            if(time>=0){
+                $("#time-tracker").text("Time: " + time + " sec");
+                    time--;
+            }
+            else{
+                alert("Quiz Over");
+                clearInterval(timeInterval);
+            }
+        }, 1000);
+    }
 
 
 })
