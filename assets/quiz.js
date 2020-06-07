@@ -6,13 +6,28 @@ let selectedAnswer;
 let timeInterval;
 
 $(document).ready(function(){
-    
+
     $(".next-btn").hide(); // hide next button
     $(".highscore-btn").hide(); // hide highscore button
     $(".question-container").hide(); // hide question container
     $(".timer").hide(); // hide timer
     $(".green-alert").hide(); // hide green alert
     $(".red-alert").hide(); // hide red alert
+
+    // Start quiz function
+    $(".start-btn").on("click",function(){
+    
+    $(".timer").show(); // show timer
+    $(".start-btn").hide(); // hide start button
+    $(".question-container").show(); //show question and answer choices 
+    $(".next-btn").show(); // hide next button
+        
+    startTimer();
+    showQuestions(); // show questions function
+        
+    });
+
+
 
 
 })
