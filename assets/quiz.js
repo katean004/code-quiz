@@ -59,6 +59,25 @@ $(document).ready(function(){
         }
     }
 
-    
+    $("#answer-btns").on("click", runningQuestions);
+
+    // Running questions function
+    function runningQuestions(){
+        if(index <= (questions.length-1)){
+            selectedAnswer = event.target.textContent;
+            if(selectedAnswer === questions[index].correct){
+                $(".green-alert").show(); // show green alert when correct
+            }
+            else{
+                time -= 15;
+                $(".red-alert").show(); // show green alert when correct
+            }
+        }
+        else{
+            console.log("QUIZ OVER");
+        }
+}
+
+
 
 })
