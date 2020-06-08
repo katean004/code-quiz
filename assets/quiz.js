@@ -98,4 +98,10 @@ $(document).ready(function(){
         showQuestions();
     }
 
+    // End quiz function: show final score
+    function lastScore(){
+        var finalScore = ((score / questions.length ) * 100);
+        alert("Final Score: " + finalScore + "%");
+    }
+
 })
