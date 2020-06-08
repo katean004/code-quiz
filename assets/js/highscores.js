@@ -34,3 +34,8 @@ function init() {
     renderInitials();
   }
 
+function storeInitials() {
+  // Stringify and set "initialsScores" key in localStorage to array
+  localStorage.setItem("initialsScores", JSON.stringify(initialsScores));
+}
+
