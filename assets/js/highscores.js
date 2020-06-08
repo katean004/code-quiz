@@ -22,3 +22,15 @@ function renderInitials() {
   }
 }
 
+function init() {
+    var storedInitials = JSON.parse(localStorage.getItem("initialsScores"));
+  
+    // If initials were retrieved from localStorage, update the array to it
+    if (storedInitials !== null) {
+      initialsScores = storedInitials;
+    }
+  
+    // Render initials to the DOM
+    renderInitials();
+  }
+
