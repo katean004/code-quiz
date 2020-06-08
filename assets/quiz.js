@@ -59,6 +59,7 @@ $(document).ready(function(){
         }
     }
 
+    // when answer buttons are clicked, call runningQuestions function
     $("#answer-btns").on("click", runningQuestions);
 
     // Running questions function
@@ -78,6 +79,15 @@ $(document).ready(function(){
         }
 }
 
+    // increment score if answer is correct when next button is clicked
+    $(".next-btn").on("click", function(){
 
+        if(selectedAnswer === questions[index].correct){
+            score++;
+            console.log(score);
+        }
+        nextQuestion();
+    });
+    
 
 })
