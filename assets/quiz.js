@@ -88,6 +88,14 @@ $(document).ready(function(){
         }
         nextQuestion();
     });
-    
+
+    // NextQuestion function
+    function nextQuestion(){
+    $(".green-alert").hide(); // hide green alert when correct
+    $(".red-alert").hide(); // hide green alert when correct
+
+    index++;
+        showQuestions();
+    }
 
 })
