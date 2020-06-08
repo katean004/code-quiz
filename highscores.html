@@ -25,7 +25,34 @@
         </div>
     </nav>
 
+    <!-- Container to keep track of high scores -->
+    <div class="card text-center">
+        <div class="card-header">
+          
+        </div>
+    <div class="card-body">
+      <h5 class="card-title">High Scores</h5>
     
+    <!-- Form to submit initials and score -->
+      <form id="initials-form">
+        <div class="row myform">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Initial and Score(%)" name="initials" id="initials-text">
+          </div>
+
+          <div class="col-auto">
+            <a href="highscores.html" class="btn btn-primary" id="submit-btn">Submit</a>
+          </div>
+        </div>
+      </form>
+
+        <p class="card-text"><span id="user-initials"></span></p>
+        <ul id="initials-list"></ul>
+    </div>
+        <div class="card-footer text-muted">
+          
+        </div>
+      </div>
 
 </body>
 </html>
