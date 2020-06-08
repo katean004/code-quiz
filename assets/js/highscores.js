@@ -39,3 +39,22 @@ function storeInitials() {
   localStorage.setItem("initialsScores", JSON.stringify(initialsScores));
 }
 
+// When form is submitted...
+initialsForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  var initialsText = initialsInput.value.trim();
+
+  // Return from function early if submitted text is blank
+  if (initialsText === "") {
+    return;
+  }
+
+  // Add new initials text to array, clear the input
+  initialsScores.push(initialsText);
+  initialsInput.value = "";
+
+  // Store updated initials in localStorage, re-render the list
+  storeInitials();
+  renderInitials();
+});
